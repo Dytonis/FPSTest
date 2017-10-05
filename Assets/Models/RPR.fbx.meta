@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 04a4e9a27b2d050439dc288662c9bc01
+timeCreated: 1507180408
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: BarrelShroud
+    100004: Bob1
+    100006: Bob2
+    100008: Bolt
+    100010: Bullet
+    100012: Buttpad
+    100014: Casing
+    100016: Cheekpad
+    100018: Magazine
+    100020: MagRelease
+    100022: MuzzleBreak
+    100024: Receiver
+    100026: //RootNode
+    100028: Saftey
+    100030: StockBase
+    100032: StockClamp
+    100034: StockPart1
+    100036: StockPart2
+    100038: Trigger
+    100040: WholeCartridge
+    100042: EmptyChamberCasing
+    100044: WholeCartridge.001
+    400000: Barrel
+    400002: BarrelShroud
+    400004: Bob1
+    400006: Bob2
+    400008: Bolt
+    400010: Bullet
+    400012: Buttpad
+    400014: Casing
+    400016: Cheekpad
+    400018: Magazine
+    400020: MagRelease
+    400022: MuzzleBreak
+    400024: Receiver
+    400026: //RootNode
+    400028: Saftey
+    400030: StockBase
+    400032: StockClamp
+    400034: StockPart1
+    400036: StockPart2
+    400038: Trigger
+    400040: WholeCartridge
+    400042: EmptyChamberCasing
+    400044: WholeCartridge.001
+    2300000: Barrel
+    2300002: BarrelShroud
+    2300004: Bob1
+    2300006: Bob2
+    2300008: Bolt
+    2300010: Bullet
+    2300012: Buttpad
+    2300014: Casing
+    2300016: Cheekpad
+    2300018: Magazine
+    2300020: MagRelease
+    2300022: MuzzleBreak
+    2300024: Receiver
+    2300026: Saftey
+    2300028: StockBase
+    2300030: StockClamp
+    2300032: StockPart1
+    2300034: StockPart2
+    2300036: Trigger
+    2300038: WholeCartridge
+    2300040: EmptyChamberCasing
+    2300042: WholeCartridge.001
+    3300000: Barrel
+    3300002: BarrelShroud
+    3300004: Bob1
+    3300006: Bob2
+    3300008: Bolt
+    3300010: Bullet
+    3300012: Buttpad
+    3300014: Casing
+    3300016: Cheekpad
+    3300018: Magazine
+    3300020: MagRelease
+    3300022: MuzzleBreak
+    3300024: Receiver
+    3300026: Saftey
+    3300028: StockBase
+    3300030: StockClamp
+    3300032: StockPart1
+    3300034: StockPart2
+    3300036: Trigger
+    3300038: WholeCartridge
+    3300040: EmptyChamberCasing
+    3300042: WholeCartridge.001
+    4300000: Casing
+    4300002: Bullet
+    4300004: WholeCartridge
+    4300006: Magazine
+    4300008: MuzzleBreak
+    4300010: MagRelease
+    4300012: Bob2
+    4300014: Trigger
+    4300016: Saftey
+    4300018: Bob1
+    4300020: StockClamp
+    4300022: Buttpad
+    4300024: StockPart2
+    4300026: Cheekpad
+    4300028: StockPart1
+    4300030: StockBase
+    4300032: Bolt
+    4300034: Barrel
+    4300036: BarrelShroud
+    4300038: Receiver
+    4300040: EmptyChamberCasing
+    4300042: WholeCartridge.001
+    7400000: WholeCartridge|Bolt_BoltBackNormal
+    7400002: WholeCartridge|BoltAction
+    7400004: WholeCartridge|Cartridge_BoltBackNormal
+    7400006: WholeCartridge|Empty_BoltBackNormal
+    7400008: WholeCartridge|WholeCartridgeAction
+    7400010: Bolt|Bolt_BoltBackNormal
+    7400012: Bolt|BoltAction
+    7400014: Bolt|Cartridge_BoltBackNormal
+    7400016: Bolt|Empty_BoltBackNormal
+    7400018: Bolt|WholeCartridgeAction
+    7400020: EmptyChamberCasing|Bolt_BoltBackNormal
+    7400022: EmptyChamberCasing|BoltAction
+    7400024: EmptyChamberCasing|Cartridge_BoltBackNormal
+    7400026: EmptyChamberCasing|Cartridge_BoltBackNormal.001
+    7400028: EmptyChamberCasing|WholeCartridgeAction
+    7400030: WholeCartridge|Cartridge_BoltBackNormal.001
+    7400032: Bolt|Cartridge_BoltBackNormal.001
+    7400034: WholeCartridge.001|Bolt_BoltBackNormal
+    7400036: WholeCartridge.001|BoltAction
+    7400038: WholeCartridge.001|Cartridge_BoltBackNormal
+    7400040: WholeCartridge.001|Cartridge_BoltBackNormal.001
+    7400042: WholeCartridge.001|WholeCartridgeAction
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
