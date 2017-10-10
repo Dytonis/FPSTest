@@ -28,6 +28,16 @@ ModelImporter:
     100040: WholeCartridge
     100042: EmptyChamberCasing
     100044: WholeCartridge.001
+    100046: Armature
+    100048: Bolt 1
+    100050: Bolt_end
+    100052: ChamberCase
+    100054: ChamberCase_end
+    100056: Magazine 1
+    100058: Magazine_end
+    100060: MagCart
+    100062: MagCart_end
+    100064: Main
     400000: Barrel
     400002: BarrelShroud
     400004: Bob1
@@ -51,6 +61,16 @@ ModelImporter:
     400040: WholeCartridge
     400042: EmptyChamberCasing
     400044: WholeCartridge.001
+    400046: Armature
+    400048: Bolt 1
+    400050: Bolt_end
+    400052: ChamberCase
+    400054: ChamberCase_end
+    400056: Magazine 1
+    400058: Magazine_end
+    400060: MagCart
+    400062: MagCart_end
+    400064: Main
     2300000: Barrel
     2300002: BarrelShroud
     2300004: Bob1
@@ -139,7 +159,35 @@ ModelImporter:
     7400038: WholeCartridge.001|Cartridge_BoltBackNormal
     7400040: WholeCartridge.001|Cartridge_BoltBackNormal.001
     7400042: WholeCartridge.001|WholeCartridgeAction
+    7400044: Armature|BoltBack
+    7400046: FireRecoilLeft.001
+    7400048: Armature|FireRecoil
+    7400050: Armature|FireRecoilLeft.001
+    7400052: FireRecoilLeft
+    7400054: Armature|FireRecoilLeft
+    7400056: Armature|Default
     9500000: //RootNode
+    13700000: Barrel
+    13700002: BarrelShroud
+    13700004: Bob1
+    13700006: Bob2
+    13700008: Bolt
+    13700010: Bullet
+    13700012: Buttpad
+    13700014: Casing
+    13700016: Cheekpad
+    13700018: Magazine
+    13700020: MagRelease
+    13700022: MuzzleBreak
+    13700024: Receiver
+    13700026: Saftey
+    13700028: StockBase
+    13700030: StockClamp
+    13700032: StockPart1
+    13700034: StockPart2
+    13700036: Trigger
+    13700038: WholeCartridge
+    13700040: WholeCartridge.001
   materials:
     importMaterials: 1
     materialName: 0
@@ -162,7 +210,382 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|BoltBack
+      takeName: Armature|BoltBack
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.793249
+        functionName: AE_BoltFinished
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Bolt 1
+        weight: 1
+      - path: Armature/Main/Bolt 1/Bolt_end
+        weight: 1
+      - path: Armature/Main/ChamberCase
+        weight: 1
+      - path: Armature/Main/ChamberCase/ChamberCase_end
+        weight: 1
+      - path: Armature/Main/Magazine 1
+        weight: 1
+      - path: Armature/Main/Magazine 1/Magazine_end
+        weight: 1
+      - path: Armature/Main/MagCart
+        weight: 1
+      - path: Armature/Main/MagCart/MagCart_end
+        weight: 1
+      - path: Barrel
+        weight: 1
+      - path: BarrelShroud
+        weight: 1
+      - path: Bob1
+        weight: 1
+      - path: Bob2
+        weight: 1
+      - path: Bolt
+        weight: 1
+      - path: Bullet
+        weight: 1
+      - path: Buttpad
+        weight: 1
+      - path: Casing
+        weight: 1
+      - path: Cheekpad
+        weight: 1
+      - path: Magazine
+        weight: 1
+      - path: MagRelease
+        weight: 1
+      - path: MuzzleBreak
+        weight: 1
+      - path: Receiver
+        weight: 1
+      - path: Saftey
+        weight: 1
+      - path: StockBase
+        weight: 1
+      - path: StockClamp
+        weight: 1
+      - path: StockPart1
+        weight: 1
+      - path: StockPart2
+        weight: 1
+      - path: Trigger
+        weight: 1
+      - path: WholeCartridge
+        weight: 1
+      - path: WholeCartridge.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|FireRecoil
+      takeName: Armature|FireRecoil
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Bolt 1
+        weight: 1
+      - path: Armature/Main/Bolt 1/Bolt_end
+        weight: 1
+      - path: Armature/Main/ChamberCase
+        weight: 1
+      - path: Armature/Main/ChamberCase/ChamberCase_end
+        weight: 1
+      - path: Armature/Main/Magazine 1
+        weight: 1
+      - path: Armature/Main/Magazine 1/Magazine_end
+        weight: 1
+      - path: Armature/Main/MagCart
+        weight: 1
+      - path: Armature/Main/MagCart/MagCart_end
+        weight: 1
+      - path: Barrel
+        weight: 1
+      - path: BarrelShroud
+        weight: 1
+      - path: Bob1
+        weight: 1
+      - path: Bob2
+        weight: 1
+      - path: Bolt
+        weight: 1
+      - path: Bullet
+        weight: 1
+      - path: Buttpad
+        weight: 1
+      - path: Casing
+        weight: 1
+      - path: Cheekpad
+        weight: 1
+      - path: Magazine
+        weight: 1
+      - path: MagRelease
+        weight: 1
+      - path: MuzzleBreak
+        weight: 1
+      - path: Receiver
+        weight: 1
+      - path: Saftey
+        weight: 1
+      - path: StockBase
+        weight: 1
+      - path: StockClamp
+        weight: 1
+      - path: StockPart1
+        weight: 1
+      - path: StockPart2
+        weight: 1
+      - path: Trigger
+        weight: 1
+      - path: WholeCartridge
+        weight: 1
+      - path: WholeCartridge.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|FireRecoilLeft
+      takeName: Armature|FireRecoilLeft
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Bolt 1
+        weight: 1
+      - path: Armature/Main/Bolt 1/Bolt_end
+        weight: 1
+      - path: Armature/Main/ChamberCase
+        weight: 1
+      - path: Armature/Main/ChamberCase/ChamberCase_end
+        weight: 1
+      - path: Armature/Main/Magazine 1
+        weight: 1
+      - path: Armature/Main/Magazine 1/Magazine_end
+        weight: 1
+      - path: Armature/Main/MagCart
+        weight: 1
+      - path: Armature/Main/MagCart/MagCart_end
+        weight: 1
+      - path: Barrel
+        weight: 1
+      - path: BarrelShroud
+        weight: 1
+      - path: Bob1
+        weight: 1
+      - path: Bob2
+        weight: 1
+      - path: Bolt
+        weight: 1
+      - path: Bullet
+        weight: 1
+      - path: Buttpad
+        weight: 1
+      - path: Casing
+        weight: 1
+      - path: Cheekpad
+        weight: 1
+      - path: Magazine
+        weight: 1
+      - path: MagRelease
+        weight: 1
+      - path: MuzzleBreak
+        weight: 1
+      - path: Receiver
+        weight: 1
+      - path: Saftey
+        weight: 1
+      - path: StockBase
+        weight: 1
+      - path: StockClamp
+        weight: 1
+      - path: StockPart1
+        weight: 1
+      - path: StockPart2
+        weight: 1
+      - path: Trigger
+        weight: 1
+      - path: WholeCartridge
+        weight: 1
+      - path: WholeCartridge.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Default
+      takeName: Armature|Default
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Bolt 1
+        weight: 1
+      - path: Armature/Main/Bolt 1/Bolt_end
+        weight: 1
+      - path: Armature/Main/ChamberCase
+        weight: 1
+      - path: Armature/Main/ChamberCase/ChamberCase_end
+        weight: 1
+      - path: Armature/Main/Magazine 1
+        weight: 1
+      - path: Armature/Main/Magazine 1/Magazine_end
+        weight: 1
+      - path: Armature/Main/MagCart
+        weight: 1
+      - path: Armature/Main/MagCart/MagCart_end
+        weight: 1
+      - path: Barrel
+        weight: 1
+      - path: BarrelShroud
+        weight: 1
+      - path: Bob1
+        weight: 1
+      - path: Bob2
+        weight: 1
+      - path: Bolt
+        weight: 1
+      - path: Bullet
+        weight: 1
+      - path: Buttpad
+        weight: 1
+      - path: Casing
+        weight: 1
+      - path: Cheekpad
+        weight: 1
+      - path: Magazine
+        weight: 1
+      - path: MagRelease
+        weight: 1
+      - path: MuzzleBreak
+        weight: 1
+      - path: Receiver
+        weight: 1
+      - path: Saftey
+        weight: 1
+      - path: StockBase
+        weight: 1
+      - path: StockClamp
+        weight: 1
+      - path: StockPart1
+        weight: 1
+      - path: StockPart2
+        weight: 1
+      - path: Trigger
+        weight: 1
+      - path: WholeCartridge
+        weight: 1
+      - path: WholeCartridge.001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -185,7 +608,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -198,7 +621,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Receiver
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0

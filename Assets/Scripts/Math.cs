@@ -4,8 +4,8 @@ using System.Linq;
 using UnityEngine;
 using System.Text;
 
-//namespace Math
-//{
+namespace FPS
+{
     public class Math
     {
         /// <summary>
@@ -154,5 +154,18 @@ using System.Text;
         {
             return r * 180f / 3.14f;
         }
+
+        /// <summary>
+        /// Linearly interpolates between a and b by t. The result is given in the difference between a and b given t.
+        /// </summary>
+        /// <param name="a">Start</param>
+        /// <param name="b">End</param>
+        /// <param name="t">Percentage of a and b, 0-1</param>
+        /// <param name="o">The old value</param>
+        /// <returns>How much o needs to increase to get to a, b given t.</returns>
+        public static float AddativeLerpUnclamped(float a, float b, float t, float o)
+        {
+            return ((a * (1 - t)) + (b * t)) - o;
+        }
     }
-//}
+}
