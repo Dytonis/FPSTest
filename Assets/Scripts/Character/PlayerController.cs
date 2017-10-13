@@ -41,7 +41,25 @@ public class PlayerController : MonoBehaviour
 	void Update ()
     {
         Rotation();
-        Movement();
+        //Movement();
+        CharacterMovement();
+        Active();
+    }
+
+    public void Active()
+    {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            RaycastHit h;
+
+            if(Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out h, 4))
+            {
+                if(h.transform.parent.GetComponent<ActiveMenu>())
+                {
+                    h.transform.parent.GetComponent<ActiveMenu>().OnActivate();
+                }
+            }
+        }
     }
 
     public void ToFOV(float fov, float speed)
@@ -68,6 +86,82 @@ public class PlayerController : MonoBehaviour
             FOVCamera.fieldOfView = Mathf.Lerp(start, fov, fracJourney);
             yield return new WaitForEndOfFrame();
         }
+    }
+
+    private void CharacterMovement()
+    {
+        int forward = 0;
+
+        if (Input.GetKey(KeyCode.W)) forward = 1;
+        if (Input.GetKey(KeyCode.S)) forward = -1;
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S)) forward = 0;
+
+        if (forward > 0)
+        {
+            velocity = new Vector3(velocity.x, velocity.y, velocity.z + (MovementAcceleration * Time.deltaTime));
+        }
+        else if (forward < 0)
+        {
+            velocity = new Vector3(velocity.x, velocity.y, velocity.z + (-MovementAcceleration * Time.deltaTime));
+        }
+        else
+        {
+            if (velocity.x > 0)
+            {
+                if (velocity.z < MovementBrake * Time.deltaTime)
+                    velocity = new Vector3(velocity.x, velocity.y, 0);
+                else
+                    velocity = new Vector3(velocity.x, velocity.y, velocity.z -= MovementBrake * Time.deltaTime);
+            }
+            else
+            {
+                if (velocity.z > -MovementBrake * Time.deltaTime)
+                    velocity = new Vector3(velocity.x, velocity.y, 0);
+                else
+                    velocity = new Vector3(velocity.x, velocity.y, velocity.z += MovementBrake * Time.deltaTime);
+            }
+
+            if (Mathf.Abs(velocity.z) < 0.1) velocity = new Vector3(velocity.x, velocity.y, 0);
+        }
+
+        int strafe = 0;
+
+        if (Input.GetKey(KeyCode.D)) strafe = 1;
+        if (Input.GetKey(KeyCode.A)) strafe = -1;
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A)) strafe = 0;
+
+        if (strafe > 0)
+        {
+            velocity = new Vector3(velocity.x + (MovementAcceleration * Time.deltaTime), velocity.y, velocity.z);
+        }
+        else if (strafe < 0)
+        {
+            velocity = new Vector3(velocity.x + (-MovementAcceleration * Time.deltaTime), velocity.y, velocity.z);
+        }
+        else
+        {
+            if (velocity.x > 0)
+            {
+                if (velocity.x < MovementBrake * Time.deltaTime)
+                    velocity = new Vector3(0, velocity.y, velocity.z);
+                else
+                    velocity = new Vector3(velocity.x -= MovementBrake * Time.deltaTime, velocity.y, velocity.z);
+            }
+            else
+            {
+                if (velocity.x > -MovementBrake * Time.deltaTime)
+                    velocity = new Vector3(0, velocity.y, velocity.z);
+                else
+                    velocity = new Vector3(velocity.x += MovementBrake * Time.deltaTime, velocity.y, velocity.z);
+            }
+
+            if (Mathf.Abs(velocity.x) < 0.1) velocity = new Vector3(0, velocity.y, velocity.z);
+        }
+
+        Vector3 clamped = Vector3.ClampMagnitude(new Vector3(velocity.x, 0, velocity.z), MovementSpeed);
+        velocity = new Vector3(clamped.x, velocity.y, clamped.z);
+
+        GetComponent<CharacterController>().SimpleMove(transform.TransformDirection(velocity));
     }
 
     private void Movement()
@@ -217,4 +311,10 @@ public class PlayerController : MonoBehaviour
 
         return b;
     }
+}
+
+[System.Serializable]
+public struct ActiveInfo
+{
+    public GameObject Workshop;
 }
